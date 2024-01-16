@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/web.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcours Académique</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var currentPath = window.location.pathname;
+
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(function (link) {
+       
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+});
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="../pages_html/parcours.html" class="nav-link">Parcours académique</a></li>
+                    <li><a href="../pages_html/compétence.html" class="nav-link">Compétences</a></li>
+                    <li><a href="../pages_html/stage.html" class="nav-link">Stages</a></li>
+                    <li><a href="../pages_html/associative.html" class="nav-link">Expériences Associative</a></li>
+                    <li><a href="../pages_html/quizz.html" class="nav-link">Quizz</a></li>
+                    <li><a href="../pages_html/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 id="parc">Parcours Académique</h2>
+
+    <section id="parcours-academique" class="academic-section">
+
+        <div class="diplome-container">
+            <div class="diplome-info">
+                <h3 class="diplome-titl">Génie Informatique: Génie Logiciel et Informatique Décisionnelle</h3>
+                <p class="diplome-titl">présent</p>
+            </div>
+        </div>
+        
+
+        <div class="diplome-container">
+            <img src="../images/419724698_380160654593902_4576646580488509144_n.jpg" alt="Licence" class="diplome-image">
+            <div class="diplome-info">
+                <h3 class="diplome-title">Licence en Informatique: Génie Logiciel et Système d'Informations</h3>
+                <p class="diplome-year">Année d'obtention : 2023</p>
+            </div>
+        </div>
+
+        <div class="diplome-container">
+            <img src="../images/419643429_308903188802733_4413866654249317842_n.jpg" alt="Baccalauréat" class="diplome-image">
+            <div class="diplome-info">
+                <h3 class="diplome-title">Baccalauréat en Sciences expérimentale</h3>
+                <p class="diplome-year">Année d'obtention : 2020</p>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    <footer class="site-footer">
+        
+    </footer>
+
+</body>
+</html>

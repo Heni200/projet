@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+.header {
+    background-color: #103c71;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: 330px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#accueil {
+    text-align: center;
+    margin: 60px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 45px;
+    color: #ff4500;
+    margin-left: 250px;
+}
+
+#biographie {
+    text-align: center;
+    margin-left: 400px;
+}
+
+#reseaux-sociaux {
+    text-align: center;
+    margin-left: 400px;
+}
+
+#parc {
+    text-align: center;
+    margin: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    color: #ff4500;
+}
+
+#reseaux-sociaux img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.academic-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.diplome-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.diplome-image {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.diplome-info {
+    margin-left: 20px;
+}
+
+.diplome-title {
+    margin: 10px 0;
+}
+
+.diplome-titl {
+    margin-left: 200px;
+}
+
+.site-footer {
+    background-color: #103c71;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.skills-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.competence {
+    margin-bottom: 20px;
+}
+
+.competence h3 {
+    margin-bottom: 10px;
+}
+
+.competence ul {
+    list-style: none;
+    padding: 0;
+}
+
+.competence li {
+    margin-bottom: 5px;
+}
+
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.section {
+    flex: 1; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 25px; 
+}
+
+.experience-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: border-bottom 0.3s ease; 
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #fff; 
+}
+
+.events-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+.event h3 {
+    margin-bottom: 10px;
+}
+
+.event p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-footer {
+    background-color: #103c71;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.quiz-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+button {
+    background-color: #103c71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result-container {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#correct-answers {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#q {
+    font-weight: 700;
+    color: #103c71;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#contact-form{
+    margin-top: 70px;
+}
+
+#pos{
+    text-align: center;
+    color: #103c71;
+}
+
+.com {
+    margin-right:60px; 
+    margin-left: 30px;
+}
+
+
+.comm {
+    margin-right:80px; 
+    margin-left: 80px;
+
+}
+
+
+
+.logo-container {
+    position: absolute;
+    top: 50px; 
+    left: 50px; 
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 250px; 
+    height: 250px; 
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+

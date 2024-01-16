@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/web.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentPath = window.location.pathname;
+
+            var navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(function (link) {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function calculateScore() {
+            
+            const correctAnswers = {
+                q1: "b",
+                q2: "c",
+                q3: "c",
+                q4: "a",
+                q5: "b",
+                q6: "c",
+                q7: "d",
+                q8: "d",
+                q9: "c",
+                q10: "b",
+                q11: "d",
+                q12: "b",
+                q13: "d",
+                q14: "c",
+                q15: "c",
+            };
+
+            
+            let score = 0;
+            const userAnswers = {};
+            for (let i = 1; i <= 15; i++) {
+                const questionName = "q" + i;
+                const userAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (userAnswer) {
+                    userAnswers[questionName] = userAnswer.value;
+
+                    
+                    if (userAnswer.value === correctAnswers[questionName]) {
+                        score++;
+                    }
+                }
+            }
+
+            
+            const resultContainer = document.getElementById("result-container");
+            resultContainer.style.display = "block";
+            resultContainer.innerHTML = `<h3>Résultats</h3><p>Votre note : <span id="score">${score} / 15</span></p><ul id="correct-answers"></ul>`;
+
+            const correctAnswersList = document.getElementById("correct-answers");
+
+            for (const question in correctAnswers) {
+                correctAnswersList.innerHTML += `<li>Question ${question.substring(1)} : ${correctAnswers[question]}</li>`;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div id="navigation">
+            <nav>
+                <ul class="n">
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="../pages_html/parcours.html" class="nav-link">Parcours académique</a></li>
+                    <li><a href="../pages_html/compétence.html" class="nav-link">Compétences</a></li>
+                    <li><a href="../pages_html/stage.html" class="nav-link">Stages</a></li>
+                    <li><a href="../pages_html/associative.html" class="nav-link">Expériences Associative</a></li>
+                    <li><a href="../pages_html/quizz.html" class="nav-link">Quizz</a></li>
+                    <li><a href="../pages_html/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 id="parc">Quizz Informatique générale</h2>
+
+    <section class="quiz-section">
+        
+        <form id="quiz-form">
+            
+            <div class="question">
+                <p id="q">1. Que désigne-t-on par "bande passante" ?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> a) La quantité de données maximale transmissible par unité de temps
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> b) La quantité de données maximale transmise par unité de temps 
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c"> c) La quantité de données minimale transmissible par unité de temps
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">2. Quel est le tag à utiliser pour placer une image ?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> a) &lt;image src="" alt=""&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> b) &lt;img source="" alt=""&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="c"> c) &lt;img src="" alt=""&gt;  
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">3. Le HTML est un langage dit</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> a) Encodé
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> b) Cryté
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="c"> c) Balisé 
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">4. L’adresse de « classe A » comprend ?</p>
+                <label>
+                    <input type="radio" name="q4" value="a"> a) 16 millions d’adresses 
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b"> b) 65.000 adresses
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="c"> c) 256 adresses
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">5. Un firewall (pare-feu), trouver l’affirmation fausse :</p>
+                <label>
+                    <input type="radio" name="q5" value="a"> a) peut bloquer les intrusions sur votre ordinateur
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="b"> b) vous protège des virus   
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="c"> c) peut interdire l’accès à certains sites
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">6. Un cookie sur Internet, peut ?</p>
+                <label>
+                    <input type="radio" name="q6" value="a"> a) être un programme
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="b"> b) contenir un virus
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="c"> c) paramétrer de façon personnalisée la page d’accueil d’un site web  
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="d"> d) saturer votre disque dur
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">7. UML est :</p>
+                <label>
+                    <input type="radio" name="q7" value="a"> a) La partie « données » de la méthode MERISE
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="b"> b) un standard de communication
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="c"> c) un type de port
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="d"> d) un langage de modélisation 
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">8. Le nombre binaire 1011 vaut en décimal :</p>
+                <label>
+                    <input type="radio" name="q8" value="a"> a) 7
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="b"> b) 9
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="c"> c) 33
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="d"> d) 11 
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">9. Quel protocole est dédié à la transmission de fichiers sur Internet ?</p>
+                <label>
+                    <input type="radio" name="q9" value="a"> a) Gropher
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="b"> b) HTTP
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="c"> c) FTP 
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">10. Une mémoire ne peut pas être de type ?</p>
+                <label>
+                    <input type="radio" name="q10" value="a"> a) ROM
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="b"> b) RUM 
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="c"> c) RAM
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">11. Quel est le nombre de couches dans le modèle OSI ?</p>
+                <label>
+                    <input type="radio" name="q11" value="a"> a) 2 couches
+                </label>
+                <label>
+                    <input type="radio" name="q11" value="b"> b) 4 couches
+                </label>
+                <label>
+                    <input type="radio" name="q11" value="c"> c) 6 couches
+                </label>
+                <label>
+                    <input type="radio" name="q11" value="d"> d) 7 couches 
+                </label>
+            </div>
+
+           
+            <div class="question">
+                <p id="q">12. Que signifie LAN ?</p>
+                <label>
+                    <input type="radio" name="q12" value="a"> a) Local Agent Network
+                </label>
+                <label>
+                    <input type="radio" name="q12" value="b"> b) Local Area Network 
+                </label>
+                <label>
+                    <input type="radio" name="q12" value="c"> c) Local Asynchronous Network
+                </label>
+                <label>
+                    <input type="radio" name="q12" value="d"> d) Local Anonymous Network
+                </label>
+            </div>
+
+           
+            <div class="question">
+                <p id="q">13. Qu’est-ce qu’un navigateur web ?</p>
+                <label>
+                    <input type="radio" name="q13" value="a"> a) Un moteur de recherche
+                </label>
+                <label>
+                    <input type="radio" name="q13" value="b"> b) Un ordinateur qui stocke des fichiers HTML
+                </label>
+                <label>
+                    <input type="radio" name="q13" value="c"> c) Un IDE
+                </label>
+                <label>
+                    <input type="radio" name="q13" value="d"> d) Un logiciel qui vous permet d’accéder à des sites sur le World Wide Web 
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">14. Combien de bits représente un octet ?</p>
+                <label>
+                    <input type="radio" name="q14" value="a"> a) 32
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="b"> b) 16
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="c"> c) 8 
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="d"> d) 4
+                </label>
+            </div>
+
+            
+            <div class="question">
+                <p id="q">15. Changer le langage informatique des 1 et des 0 en caractères qu’une personne peut comprendre, c’est ________</p>
+                <label>
+                    <input type="radio" name="q15" value="a"> a) Exécuter
+                </label>
+                <label>
+                    <input type="radio" name="q15" value="b"> b) Coder
+                </label>
+                <label>
+                    <input type="radio" name="q15" value="c"> c) Décoder 
+                </label>
+                <label>
+                    <input type="radio" name="q15" value="d"> d) Chiffrer
+                </label>
+            </div>
+
+            <button type="button" onclick="calculateScore()">Valider</button>
+        </form>
+
+        <div id="result-container" style="display: none;">
+            <h3>Résultats</h3>
+            <p>Votre note : <span id="score"></span></p>
+            <ul id="correct-answers"></ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

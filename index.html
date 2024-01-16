@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/web.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heni BAYOUDH</title>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentPath = window.location.pathname;
+            var navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(function (link) {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div id="navigation">
+            <nav>
+                <ul class="n">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="pages_html/parcours.html" class="nav-link">Parcours Académique</a></li>
+                    <li><a href="pages_html/compétence.html" class="nav-link">Compétences</a></li>
+                    <li><a href="pages_html/stage.html" class="nav-link">Stages</a></li>
+                    <li><a href="pages_html/associative.html" class="nav-link">Expériences Associative</a></li>
+                    <li><a href="pages_html/quizz.html" class="nav-link">Quizz</a></li>
+                    <li><a href="pages_html/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <div class="logo-container">
+        <img src="images/243457326_2078286329005175_5111133916106957259_n (1).jpg" alt="Logo" class="logo">
+        <p class="caption">Heni BAYOUDH</p>
+        <p class="caption">Etudiant en 1ère année Génie Informatique</p>
+    </div>
+
+    <h2 id="accueil">Bienvenue sur mon site personnel</h2>
+
+    <section id="biographie">
+        <h2>Biographie</h2>
+        <p>Je suis Heni BAYOUDH, j'ai 22 ans et je suis étudiant en première année de génie informatique à l'IIT. J'étais joueur de football au sein du Club Sportif Sfaxien. Je suis passionné par le sport, particulièrement le football et le tennis. Actuellement, je me concentre sur mes études et j'espère travailler dans le domaine du DevOps. </p>
+    </section>
+
+    <section id="reseaux-sociaux">
+        <h2>Réseaux Sociaux</h2>
+        
+        <a href="https://www.facebook.com/heni.bayoudh.1" target="_blank"><img src="images/téléchargement.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/votrenom" target="_blank"><img src="images/téléchargement (1).png" alt="Linkedin"></a>
+        <a href="https://www.instagram.com/henibayoudh/" target="_blank"><img src="images/téléchargement.jpg" alt="instagram"></a>
+    </section>
+
+    <footer class="site-footer">
+        
+    </footer>
+
+</body>
+</html>

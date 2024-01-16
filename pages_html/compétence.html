@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/web.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+    <style>
+        
+        .sections-container ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var currentPath = window.location.pathname;
+
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(function (link) {
+       
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+});
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="../pages_html/parcours.html" class="nav-link">Parcours académique</a></li>
+                    <li><a href="../pages_html/compétence.html" class="nav-link">Compétences</a></li>
+                    <li><a href="../pages_html/stage.html" class="nav-link">Stages</a></li>
+                    <li><a href="../pages_html/associative.html" class="nav-link">Expériences Associative</a></li>
+                    <li><a href="../pages_html/quizz.html" class="nav-link">Quizz</a></li>
+                    <li><a href="../pages_html/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 id="parc">Compétences</h2>
+
+    <div class="sections-container">
+        <section class="section">
+            <div class="competence">
+                <h3 id="pos">Langages de Programmation</h3>
+                <ul class="com">
+                    <li class="com">JavaScript</li>
+                    <li class="com">Python</li>
+                    <li class="com">Java</li>
+                    <li class="com">C</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="competence">
+                <h3 id="pos">Frameworks</h3>
+                <ul class="comm">
+                    <li class="comm">React.js</li>
+                    <li class="comm">Angular</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="sections-container">
+        <section class="section">
+            <div class="competence">
+                <h3 id="pos">Systèmes de Gestion de Base de Données (SGBD)</h3>
+                <ul class="comm">
+                    <li class="comm">MySQL</li>
+                    <li class="comm">MongoDB</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="competence">
+                <h3 id="pos">Méthode agile</h3>
+                <ul class="comm">
+                    <li class="comm">Scrum</li>
+                    <li class="comm">Kanban</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        
+    </footer>
+
+</body>
+</html>
+

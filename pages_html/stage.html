@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/web.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages et Expériences Professionnelles</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var currentPath = window.location.pathname;
+
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(function (link) {
+       
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+});
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="../pages_html/parcours.html" class="nav-link">Parcours académique</a></li>
+                    <li><a href="../pages_html/compétence.html" class="nav-link">Compétences</a></li>
+                    <li><a href="../pages_html/stage.html" class="nav-link">Stages</a></li>
+                    <li><a href="../pages_html/associative.html" class="nav-link">Expériences Associative</a></li>
+                    <li><a href="../pages_html/quizz.html" class="nav-link">Quizz</a></li>
+                    <li><a href="../pages_html/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 id="parc">Stages</h2>
+
+    
+        <section class="experience-section">
+        <div class="experience">
+            <h3>Banque Zitouna</h3>
+            <p>Lieu : Sfax, Tunisie</p>
+            <p>Durée : 1 Juillet 2022 - 31 Aout 2022</p>
+            <p>Objectif : Connaitre le travail du département informatique chez les banque en ce concentre sur les activités sur le réseaux et la maintenance </p>
+        </div>
+    </section>
+        <section class="experience-section">
+        <div class="experience">
+            <h3>Exactt Consulting (Stage PFE)</h3>
+            <p>Lieu : Tunis, Tunisie</p>
+            <p>Durée : 20 Février 2023 - 30 Juin 2023</p>
+            <p>Objectif : développement d'un moteur de calcul universel de la paie capable de s’adapter aux différentes 
+                   législations des différents pays du monde et surtout du réseau africain. </p>
+        </div>
+    </section>
+
+    
+
+    <footer class="site-footer">
+        
+    </footer>
+
+</body>
+</html>

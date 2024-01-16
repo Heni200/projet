@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/web.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var currentPath = window.location.pathname;
+
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(function (link) {
+       
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+});
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div id="navigation">
+            <nav>
+                <ul class="n">
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="../pages_html/parcours.html" class="nav-link">Parcours académique</a></li>
+                    <li><a href="../pages_html/compétence.html" class="nav-link">Compétences</a></li>
+                    <li><a href="../pages_html/stage.html" class="nav-link">Stages</a></li>
+                    <li><a href="../pages_html/associative.html" class="nav-link">Expériences Associative</a></li>
+                    <li><a href="../pages_html/quizz.html" class="nav-link">Quizz</a></li>
+                    <li><a href="../pages_html/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 id="parc">Expériences associative</h2>
+
+    <section class="events-section">
+     
+        <div class="event">
+            <h3>Président, Club Python-IIT</h3>
+            <p>septembre 2023 - présent</p>
+        </div>
+
+        <div class="event">
+            <h3>Chef cellule logistique university chapter, Tunivisions Foundation</h3>
+            <p> Septembre 2022 - juin 2023</p>
+        </div>
+
+        <div class="event">
+            <h3>OC Team TUM décembre 2021 | édition GEEL, Tunivisions Foundation</h3>
+            <p> 20 octobre 2021 - 22 décembre 2021</p>
+        </div>
+
+        <div class="event">
+            <h3>Vice Président événementiel, Club Tunivisions IIT&ISB</h3>
+            <p> Septembre 2021 - juin 2022</p>
+        </div>
+
+        <div class="event">
+            <h3>Community Manager, Club Python-IIT</h3>
+            <p> Septembre 2021 - juin 2022</p>
+        </div>
+
+
+
+
+
+    </section>
+
+    <footer class="site-footer">
+        
+    </footer>
+
+</body>
+</html>
